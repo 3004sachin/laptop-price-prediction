@@ -65,4 +65,3 @@ if st.button('Predict Price'):
     st.title("The predicted price of this configuration is " + str(int(np.exp(pipe.predict(query)[0]))))
 
 
-https://github.com/3004sachin/laptop-price-prediction.git
