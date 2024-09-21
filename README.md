@@ -45,7 +45,7 @@ To run this project locally, follow these steps:
 ### Installation Steps:
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/laptop-price-predictor.git
+   git clone https://github.com/3004sachin/laptop-price-prediction.git
    ```
 2. Navigate to the project directory:
    ```bash
