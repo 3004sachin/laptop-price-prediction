@@ -1,3 +1,7 @@
+# This Python code snippet is creating a Streamlit web application for predicting the price of a
+# laptop based on various features. Here's a breakdown of what the code is doing:
+
+
 import streamlit as st
 import pickle
 import numpy as np
