@@ -1,13 +1,10 @@
-# This Python code snippet is creating a Streamlit web application for predicting the price of a
-# laptop based on various features. Here's a breakdown of what the code is doing:
-
 
 import streamlit as st
 import pickle
 import numpy as np
 
 # import the model
-pipe = pickle.load(open('pipe.pkl','rb'))
+model = pickle.load(open('stacked_model.pkl','rb'))
 df = pickle.load(open('df.pkl','rb'))
 
 st.title("Laptop Predictor")
@@ -66,7 +63,7 @@ if st.button('Predict Price'):
     query = np.array([company,type,ram,weight,touchscreen,ips,ppi,cpu,hdd,ssd,gpu,os])
 
     query = query.reshape(1,12)
-    st.title("The predicted price of this configuration is " + str(int(np.exp(pipe.predict(query)[0]))))
+    st.title("The predicted price of this configuration is " + str(int(np.exp(model.predict(query)[0]))))
 
 
 
